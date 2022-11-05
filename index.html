@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ejercicio Typescript Bejob</title>
+	</head>
+	<body>
+		<h1>Abre la consola</h1>
+		<script src="desktop/SystemJS"></script>
+		<script>
+			SystemJS.config({
+				baseURL: '/build',
+				defaultJSExtensions: true,
+			});
+			SystemJS.import('main.js');
+		</script>
+	</body>
+</html>
